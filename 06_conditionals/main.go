@@ -1,0 +1,34 @@
+package main
+
+import "fmt"
+
+func main() {
+	x := 15
+	y := 15
+
+	// if else
+	if x <= y {
+		fmt.Printf("%d is less than or equal to %d\n", x, y)
+	} else {
+		fmt.Printf("%d is less than %d\n", y, x)
+	}
+
+	// else if
+	color := "orange"
+	if color == "red" {
+		fmt.Println("Color is red")
+	} else if color == "blue" {
+		fmt.Println("color is Blue")
+	} else {
+		fmt.Println("color is NOT blue or red")
+	}
+
+	switch color {
+	case "red":
+		fmt.Println("color is red")
+	case "blue":
+		fmt.Println("color is bue")
+	default:
+		fmt.Println("color is Not red or blue")
+	}
+}
